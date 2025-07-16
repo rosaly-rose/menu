@@ -1,0 +1,70 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cairo', sans-serif;
+  direction: rtl;
+  background-color: #000;
+}
+
+.hero {
+  height: 100vh;
+  background-image: url('banner-02.jpg');
+  background-size: cover;
+  background-position: right center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: zoomIn 3s ease-in-out forwards;
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  text-align: center;
+  color: white;
+  animation: slideUp 2.5s ease-in-out forwards;
+  opacity: 0;
+}
+
+.welcome {
+  font-family: 'Pacifico', cursive;
+  font-size: 28px;
+  color: #caac83;
+  margin-bottom: 20px;
+}
+
+.main-title {
+  font-size: 60px;
+  color: white;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.description {
+  margin-top: 15px;
+  font-size: 22px;
+  color: white;
+  text-shadow: 1px 1px 0 black;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
